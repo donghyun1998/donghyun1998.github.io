@@ -1,6 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-color: #24292e;
+}
+
+html {
+  color: rgb(var(--foreground-rgb));
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+header {
+  background-color: #24292e;
+}
+
+nav {
+  background-color: #24292e;
+}
 
 /* :root {
   --foreground-rgb: 0, 0, 0;
