@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  background-color: var(--background-color);
+  background-color: #24292e;
 }
 
 header {
@@ -21,7 +21,15 @@ header {
 nav {
   background-color: #24292e;
 }
-
+footer{
+  /* position : min-h; */
+  transform : translateY(-100%);
+}
+/* #wrapper{
+  height: 20px;
+  position : relative;
+  transform : translateY(-100%);
+} */
 /* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -46,8 +54,3 @@ body {
     rgb(var(--background-start-rgb));
 } */
 
-.home-title {
-  font-size: 2em;
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-}

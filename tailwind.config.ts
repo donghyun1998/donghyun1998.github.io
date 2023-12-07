@@ -5,8 +5,13 @@ const config: Config = {
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
+    './portfolio/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    colors: {
+      black: '#000',
+      red: '#FF0000',
+    },
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

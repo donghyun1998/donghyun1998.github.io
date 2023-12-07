@@ -1,19 +1,59 @@
-import Image from 'next/image'
-
-export default function Home() {
+export default async function Home() {
   return (
-    <div>
-      <h6 className=''>홈 화면</h6>
-      <h6 className=''>홈 화면</h6>
-      <h6 className=''>홈 화면</h6>
-      <h6 className=''>홈 화면</h6>
-      <h6 className=''>홈 화면</h6>
-      <h6 className=''>홈 화면</h6>
-      <h6 className=''>홈 화면</h6>
-      <h6 className=''>홈 화면</h6>
-      <h6 className=''>홈 화면</h6>
-      <h6 className=''>홈 화면</h6>
-      <h6 className=''>홈 화면</h6><h6 className=''>홈 화면</h6><h6 className=''>홈 화면</h6><h6 className=''>홈 화면</h6><h6 className=''>홈 화면</h6><h6 className=''>홈 화면</h6><h6 className=''>홈 화면</h6><h6 className=''>홈 화면</h6><h6 className=''>홈 화면</h6><h6 className=''>홈 화면</h6><h6 className=''>홈 화면</h6><h6 className=''>홈 화면</h6>v<h6 className=''>홈 화면</h6><h6 className=''>홈 화면</h6><h6 className=''>홈 화면</h6><h6 className=''>홈 화면</h6><h6 className=''>홈 화면</h6><h6 className=''>홈 화면</h6><h6 className=''>홈 화면</h6><h6 className=''>홈 화면</h6><h6 className=''>홈 화면</h6><h6 className=''>홈 화면</h6><h6 className=''>홈 화면</h6><h6 className=''>홈 화면</h6><h6 className=''>홈 화면</h6><h6 className=''>홈 화면</h6><h6 className=''>홈 화면</h6><h6 className=''>홈 화면</h6><h6 className=''>홈 화면</h6><h6 className=''>홈 화면</h6><h6 className=''>홈 화면</h6><h6 className=''>홈 화면</h6><h6 className=''>홈 화면</h6><h6 className=''>홈 화면</h6><h6 className=''>홈 화면</h6><h6 className=''>홈 화면</h6><h6 className=''>홈 화면</h6><h6 className=''>홈 화면</h6><h6 className=''>홈 화면</h6><h6 className=''>홈 화면</h6><h6 className=''>홈 화면</h6><h6 className=''>홈 화면</h6><h6 className=''>홈 화면</h6><h6 className=''>홈 화면</h6><h6 className=''>홈 화면</h6><h6 className=''>홈 화면</h6><h6 className=''>홈 화면</h6><h6 className=''>홈 화면</h6><h6 className=''>홈 화면</h6><h6 className=''>홈 화면</h6><h6 className=''>홈 화면</h6><h6 className=''>홈 화면</h6><h6 className=''>홈 화면</h6><h6 className=''>홈 화면</h6><h6 className=''>홈 화면</h6><h6 className=''>홈 화면</h6>
-    </div>
+    <main className="h-full w-screen flex-col items-center justify-center">
+      <div>top</div>
+      <div>hihi</div>
+      <div>hihi</div>
+      <div>hihi</div>
+      <div>hihi</div>
+      <div>hihi</div>
+      <div>hihi</div>
+      <div>hihi</div>
+      <div>hihi</div>
+      <div>hihi</div>
+      <div>hihi</div>
+      <div>hihi</div>
+      <div>hihi</div>
+      <div>hihi</div>
+      <div>hihi</div>
+      <div>hihi</div>
+      <div>hihi</div>
+      <div>hihi</div>
+      <div>hihi</div>
+      <div>hihi</div>
+      <div>hihi</div>
+      <div>hihi</div>
+      <div>hihi</div>
+      <div>hihi</div>
+      <div>hihi</div>
+      <div>hihi</div>
+      <div>hihi</div>
+      <div>hihi</div>
+      <div>hihi</div>
+      <div>hihi</div>
+      <div>hihi</div>
+      <div>hihi</div>
+      <div>hihi</div>
+      <div>hihi</div>
+      <div>hihi</div>
+      <div>hihi</div>
+      <div>hihi</div>
+      <div>hihi</div>
+      <div>hihi</div>
+      <div>hihi</div>
+      <div>hihi</div>
+      <div>hihi</div>
+      <div>hihi</div>
+      <div>hihi</div>
+      <div>hihi</div>
+      <div>hihi</div>
+      <div>hihi</div>
+      <div>hihi</div>
+      <div>hihi</div>
+      <div>hihi</div>
+      <div>hihi</div>
+      <div>hihi</div>
+      <div>bottom</div>
+    </main>
   )
 }
