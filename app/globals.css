@@ -3,7 +3,7 @@
 @tailwind utilities;
 :root {
   --foreground-rgb: 255, 255, 255;
-  --background-color: #24292e;
+  --background-color: #4E514E;
 }
 
 html {
@@ -11,16 +11,10 @@ html {
 }
 
 body {
-  background-color: #24292e;
+  background-color: #4E514E;
 }
 
-header {
-  background-color: #24292e;
-}
 
-nav {
-  background-color: #24292e;
-}
 footer{
   /* position : min-h; */
   transform : translateY(-100%);

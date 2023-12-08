@@ -1,12 +1,96 @@
-import Image from 'next/image'
-
 export default function DevHome() {
   return (
-    <main className="h-full w-screen flex-col items-center justify-center">
-      <div>top</div>
-      <div>mid</div>
-      <div>mid</div><div>mid</div><div>mid</div><div>mid</div><div>mid</div><div>mid</div><div>mid</div><div>mid</div><div>mid</div><div>mid</div><div>mid</div><div>mid</div><div>mid</div><div>mid</div><div>mid</div><div>mid</div><div>mid</div><div>mid</div><div>mid</div><div>mid</div><div>mid</div><div>mid</div><div>mid</div><div>mid</div><div>mid</div><div>mid</div><div>mid</div><div>mid</div><div>mid</div><div>mid</div>
-      <div>bottom</div>
+    <main className="flex h-full w-full flex-col">
+      <div className="flex h-full w-full">top
+      <br />
+      mid
+      <br />
+      midmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmid
+      <br />
+      midmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmid
+      <br />
+      midmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmidmid
+      <br />
+      mid
+      <br />
+      mid
+      <br />
+      mid
+      <br />
+      mid
+      <br />
+      mid
+      <br />
+      mid
+      <br />
+      mid
+      <br />
+      mid
+      <br />
+      mid
+      <br />
+      mid
+      <br />
+      mid
+      <br />
+      mid
+      <br />
+      mid
+      <br />
+      mid
+      <br />
+      mid
+      <br />
+      mid
+      <br />
+      mid
+      <br />
+      mid
+      <br />
+      mid
+      <br />
+      mid
+      <br />
+      mid
+      <br />
+      mid
+      <br />
+      mid
+      <br />
+      mid
+      <br />
+      mid
+      <br />
+      mid
+      <br />
+      mid
+      <br />
+      mid
+      <br />
+      mid
+      <br />
+      mid
+      <br />
+      mid
+      <br />
+      mid
+      <br />
+      mid
+      <br />
+      mid
+      <br />
+      mid
+      <br />
+      mid
+      <br />
+      mid
+      <br />
+      mid
+      <br />
+      mid
+      <br />
+      bottom
+      </div>
     </main>
   )
 }

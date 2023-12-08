@@ -1,4 +1,4 @@
-export default async function Home() {
+export default function Home() {
   return (
     <main className="h-full w-screen flex-col items-center justify-center">
       <div>top</div>

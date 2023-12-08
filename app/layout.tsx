@@ -3,13 +3,13 @@ import './globals.css'
 
 const Header = () => {
   return (
-    <header className="flex h-20 w-full space-x-8 p-4">
-      <h1 className="flex items-center text-4xl font-bold text-white">
+    <header className="flex bg-pewter h-20 w-full space-x-8 p-4 min-h-max min-w-max">
+      <h1 className="text-white flex items-center text-4xl font-bold">
         <Link href="/">동현.dev</Link>
       </h1>
       <ul className="flex items-center justify-center space-x-8 text-lg">
         <li>
-          <Link className="flex-shrink" href="/portfolio">
+          <Link href="/portfolio">
             portfolio
           </Link>
         </li>
@@ -33,7 +33,7 @@ export default function RootLayout({
     <html lang="ko">
       <body className="flex h-screen w-screen flex-col">
         <Header />
-        <div className=" flex h-full w-screen overflow-y-scroll">
+        <div className="flex h-full w-screen overflow-y-scroll">
           {children}
         </div>
       </body>

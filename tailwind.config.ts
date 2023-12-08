@@ -11,6 +11,15 @@ const config: Config = {
     colors: {
       black: '#000',
       red: '#FF0000',
+      navy: '#05445E',
+      dark_blue: '#05263B',
+      misty_blue: '#AEB8C4',
+      blue_grotto: '#163B50',
+      slate: '#9CA6B8',
+      gunmetal_gray: '#4E514E',
+      gray: '#666666',
+      pewter: '#A5ABA0',
+      ivory: '#DBDDD0'
     },
     extend: {
       backgroundImage: {
