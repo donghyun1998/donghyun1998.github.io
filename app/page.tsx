@@ -1,59 +1,7 @@
 export default function Home() {
   return (
-    <main className="h-full w-screen flex-col items-center justify-center">
-      <div>top</div>
-      <div>hihi</div>
-      <div>hihi</div>
-      <div>hihi</div>
-      <div>hihi</div>
-      <div>hihi</div>
-      <div>hihi</div>
-      <div>hihi</div>
-      <div>hihi</div>
-      <div>hihi</div>
-      <div>hihi</div>
-      <div>hihi</div>
-      <div>hihi</div>
-      <div>hihi</div>
-      <div>hihi</div>
-      <div>hihi</div>
-      <div>hihi</div>
-      <div>hihi</div>
-      <div>hihi</div>
-      <div>hihi</div>
-      <div>hihi</div>
-      <div>hihi</div>
-      <div>hihi</div>
-      <div>hihi</div>
-      <div>hihi</div>
-      <div>hihi</div>
-      <div>hihi</div>
-      <div>hihi</div>
-      <div>hihi</div>
-      <div>hihi</div>
-      <div>hihi</div>
-      <div>hihi</div>
-      <div>hihi</div>
-      <div>hihi</div>
-      <div>hihi</div>
-      <div>hihi</div>
-      <div>hihi</div>
-      <div>hihi</div>
-      <div>hihi</div>
-      <div>hihi</div>
-      <div>hihi</div>
-      <div>hihi</div>
-      <div>hihi</div>
-      <div>hihi</div>
-      <div>hihi</div>
-      <div>hihi</div>
-      <div>hihi</div>
-      <div>hihi</div>
-      <div>hihi</div>
-      <div>hihi</div>
-      <div>hihi</div>
-      <div>hihi</div>
-      <div>bottom</div>
+    <main className="h-full w-full items-center justify-center">
+      <div>홈 화면</div>
     </main>
   )
 }
