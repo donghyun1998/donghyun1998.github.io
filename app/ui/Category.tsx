@@ -7,6 +7,7 @@ export default function Category() {
       <div>Algorithm (300)</div>
       <div>42seoul (10)</div>
       <div>web (10)</div>
+      <div>하드코딩임 ㅎ</div>
     </div>
   )
 }

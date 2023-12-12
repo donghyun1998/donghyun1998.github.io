@@ -3,6 +3,7 @@ import { format } from 'date-fns'
 import Link from 'next/link'
 
 export default function TitleBox(post: Post) {
+  console.log(post)
   return (
     <div>
       <div className="mx-4 mt-4 overflow-hidden rounded-md bg-ivory text-black shadow-md">

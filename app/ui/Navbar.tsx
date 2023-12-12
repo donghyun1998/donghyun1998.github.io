@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { usePathname} from 'next/navigation'
+import { usePathname } from 'next/navigation'
 
 export default function Navbar() {
   const pathname = usePathname()
@@ -20,7 +20,6 @@ export default function Navbar() {
       name: 'life',
     },
   ]
-  console.log(pathname)
   return (
     <ul className="flex items-center justify-center space-x-8 text-lg">
       {menus.map((menu, index) => (
