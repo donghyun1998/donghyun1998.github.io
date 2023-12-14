@@ -12,7 +12,7 @@ const config: Config = {
       black: '#000',
       red: '#FF0000',
       navy: '#05445E',
-      dark_blue: '#05263B',
+      dark_blue: '#161A30',
       misty_blue: '#AEB8C4',
       blue_grotto: '#163B50',
       slate: '#9CA6B8',
@@ -29,6 +29,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/typography'),],
 }
 export default config

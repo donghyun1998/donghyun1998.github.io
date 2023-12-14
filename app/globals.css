@@ -3,7 +3,7 @@
 @tailwind utilities;
 :root {
   --foreground-rgb: 255, 255, 255;
-  --background-color: #4E514E;
+  --background-color: #404258;
 }
 
 html {
@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  background-color: #4E514E;
+  background-color: #404258;
 }
 
 
