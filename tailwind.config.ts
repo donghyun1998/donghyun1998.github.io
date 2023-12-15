@@ -10,6 +10,7 @@ const config: Config = {
   theme: {
     colors: {
       black: '#000',
+      velog_grey: '#323232',
       red: '#FF0000',
       navy: '#05445E',
       dark_blue: '#161A30',
