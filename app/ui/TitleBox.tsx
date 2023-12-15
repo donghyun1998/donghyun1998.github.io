@@ -6,7 +6,7 @@ export default function TitleBox(post: Post) {
   console.log(post)
   return (
     <div>
-      <div className="mx-4 mt-4 overflow-hidden rounded-md bg-ivory text-black shadow-md">
+      <div className="mx-4 mt-4 overflow-hidden rounded-md bg-misty_blue text-black shadow-md">
         <div className="p-2">
           <Link href={post.url} className="mb-2 text-xl font-bold">{post.title}</Link>
           <div>{format(new Date(post.date), 'yyyy년 MM월 dd일')}</div>

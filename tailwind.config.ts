@@ -16,10 +16,6 @@ const config: Config = {
       misty_blue: '#AEB8C4',
       blue_grotto: '#163B50',
       slate: '#9CA6B8',
-      gunmetal_gray: '#4E514E',
-      gray: '#666666',
-      pewter: '#A5ABA0',
-      ivory: '#DBDDD0'
     },
     extend: {
       backgroundImage: {
