@@ -41,37 +41,4 @@ const PostLayout = ({ params }: { params: { slug: string[] } }) => {
   )
 }
 
-// export async function getStaticProps({ params }: GetStaticPropsContext) {
-//   const slug = params?.slug
-//   if (!Array.isArray(slug)) {
-//     return {
-//       notFound: true,
-//     }
-//   }
-//   const post = allPosts.find((post) => post.url === slug.join('/'))
-
-//   if (!post) {
-//     return { notFound: true }
-//   }
-
-//   const props: Props = {
-//     post,
-//   }
-
-//   return {
-//     props,
-//   }
-// }
-
-// export async function getStaticPaths(): Promise<GetStaticPathsResult> {
-//   const paths = allPosts.map((post) => ({
-//     params: { slug: post.url.split('/') },
-//   }))
-
-//   return {
-//     paths,
-//     fallback: false,
-//   }
-// }
-
 export default PostLayout
