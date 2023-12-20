@@ -8,6 +8,7 @@ export const Post = defineDocumentType(() => ({
     title: { type: 'string', required: true },
     date: { type: 'date', required: true },
     category: { type: 'string', required: true },
+    tag: {type: 'string', required: true},
   },
   computedFields: {
     url: {
