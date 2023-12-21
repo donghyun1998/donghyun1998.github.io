@@ -2,9 +2,9 @@ import { allPosts } from '@/.contentlayer/generated'
 import TagBox from '@/app/ui/TagBox'
 import { compareDesc } from 'date-fns'
 
-export default function DevTagLayout({ children }: { children: React.ReactNode }) {
+export default function LifeTagLayout({ children }: { children: React.ReactNode }) {
   const posts = allPosts
-    .filter((post) => post.category === 'dev')
+    .filter((post) => post.category === 'life')
     .sort((a, b) => compareDesc(new Date(a.date), new Date(b.date)))
 
   return (

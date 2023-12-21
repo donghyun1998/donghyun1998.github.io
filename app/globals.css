@@ -7,10 +7,10 @@
   --background-color: #121212;
 }
 
-html {
+ html {
   color: rgb(var(--foreground-rgb));
 }
 
-body {
+ body {
   background-color: #121212;
 } */
