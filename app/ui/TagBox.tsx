@@ -10,8 +10,10 @@ interface Props {
 export default function TagBox({ tag, count }: Props) {
   const { push } = useRouter()
   return (
-    <Badge onClick={() => push(`/dev?tag=${tag}`)}>
-      {tag + ' (' + count + ')'}
-    </Badge>
+    <Badge
+      tag={tag}
+      count={count}
+      onClick={() => push(`/dev?tag=${tag}`)}
+    />
   )
 }

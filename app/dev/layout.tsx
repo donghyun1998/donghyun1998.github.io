@@ -15,7 +15,6 @@ export default function DevTagLayout({
     } else {
       tagMap.set(posts[i].tag, 1)
     }
-    console.log(tagMap)
   }
 
   return (
