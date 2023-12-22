@@ -1,28 +1,25 @@
 import { Post, allPosts } from 'contentlayer/generated'
 import { format, parseISO } from 'date-fns'
+
 type Props = {
   post: Post
 }
 
 export const generateStaticParams = async () =>
-  allPosts.map((post) => [{ slug: post._raw.flattenedPath }])
+  allPosts.map((post) => ({ slug: post.slug.split('/') }))
 
 export const generateMetadata = ({
   params,
 }: {
   params: { slug: string[] }
 }) => {
-  const post = allPosts.find(
-    (post) => post._raw.flattenedPath === params.slug.join('/'),
-  )
+  const post = allPosts.find((post) => post.slug === params.slug.join('/'))
   if (!post) throw new Error(`Post not found for slug: ${params.slug}`)
   return { title: post.title }
 }
 
 const PostLayout = ({ params }: { params: { slug: string[] } }) => {
-  const post = allPosts.find(
-    (post) => post._raw.flattenedPath === params.slug.join('/'),
-  )
+  const post = allPosts.find((post) => post.slug === params.slug.join('/'))
   if (!post) throw new Error(`Post not found for slug: ${params.slug}`)
 
   return (
