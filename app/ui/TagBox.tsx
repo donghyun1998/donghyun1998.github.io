@@ -1,11 +1,17 @@
 'use client'
-import { Post } from '@/.contentlayer/generated'
 import Badge from '@/app/ui/Badge'
 import { useRouter } from 'next/navigation'
 
-export default function TagBox(post: Post) {
+interface Props {
+  tag: string
+  count: number
+}
+
+export default function TagBox({ tag, count }: Props) {
   const { push } = useRouter()
   return (
-    <Badge onClick={() => push(`/dev?tag=${post.tag}`)}>{post.tag}</Badge>
+    <Badge onClick={() => push(`/dev?tag=${tag}`)}>
+      {tag + ' (' + count + ')'}
+    </Badge>
   )
 }
