@@ -21,7 +21,7 @@ export default function DevTagLayout({
     <div className="mx-8 flex h-full w-screen flex-col overflow-y-scroll">
       <div className="flex gap-2">
         {Array.from(tagMap).map(([k, v], idx) => (
-          <TagBox key={idx} tag={k} count={v} />
+          <TagBox category='dev' key={idx} tag={k} count={v} />
         ))}
       </div>
       {children}
