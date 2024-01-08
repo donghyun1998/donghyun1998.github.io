@@ -156,7 +156,7 @@ tag: javascript
     if (obj[a] > 0) {
     	obj[a]++;
     } else {
-    	obj[b] = 1;
+    	obj[a] = 1;
     }
     ```
 
@@ -229,11 +229,11 @@ tag: javascript
     let student = new Func();
     console.log(student); // Func { name: 'Kim', age: 15 } // gender는 없다
     console.log(student.gender); // 하지만 사용 가능
+    console.log(student.__proto__); // 모든 prototype 출력 가능
     ```
 
     string, 대부분의 object의 경우 prototype으로 toString()메서드를 가지고 있다.
 
-    class.**__proto__** 출력해보면 모든 prototype 볼 수있다.
 
 - class 키워드
 
