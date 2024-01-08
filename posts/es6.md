@@ -293,3 +293,152 @@ tag: javascript
     person.name = " Bob ";
     console.log(person.name); // 'BOB', set name(newName)이 호출됨
     ```
+- destructuring (구조 분해 할당)
+
+    ```jsx
+    function func(obj) { // 이렇게 묶을 수 있다
+      console.log(obj.a)
+      console.log(obj.b)
+      console.log(obj.c)
+    }
+
+    func({a : 1, b : 2, c : 3})
+    ```
+
+    ```jsx
+    function func(arr) { // 어레이도 가능
+      for (let i = 0; i < arr.length; i++) {
+        console.log(arr[i])
+      }
+    }
+
+    func([1, 2, 3, 4, 5]);
+    ```
+
+- promise
+
+    성공 시 .then
+
+    실패 시 .catch
+
+    ```jsx
+    var 이미지로딩 = new Promise(function(성공, 실패){
+      var img = document.querySelector('#test');
+      img.addEventListener('load', function(){
+          성공();
+      });
+      img.addEventListener('error', function(){
+          실패();
+      });
+
+    });
+
+    이미지로딩.then(function(){
+      console.log('성공했어요')
+    }).catch(function(){
+      console.log('실패했어요')
+    })
+    ```
+
+- async/await
+
+    함수 앞에 async 붙히면 그 함수 자체를 promise로 만들어준다.
+
+    ```jsx
+    async function 더하기(){
+      1 + 1
+    }
+
+    더하기().then(function(){ // 즉 then 사용 가능
+      console.log('더하기 성공했어요')
+    });
+    ```
+
+    ```jsx
+    async function 더하기(){
+      var 어려운연산 = new Promise((성공, 실패)=>{
+        var 결과 = 1 + 1;
+        성공(결과);
+      });
+      var 결과 = await 어려운연산; // 해당 연산을 끝날때까지 block된다
+      console.log(결과); // 대신 await은 실패 시 error throw되면서 멈춘다.
+    }
+    더하기();
+    ```
+
+    ```jsx
+    async function 더하기(){
+      var 어려운연산 = new Promise((성공, 실패)=>{
+        실패();
+      });
+      try {  var 결과 = await 어려운연산 } // 안 멈추고 싶으면 이렇게 try 사용해주자
+      catch { 어려운연산 Promise가 실패할 경우 실행할 코드 }
+    }
+    ```
+
+- 반복문 문법
+
+    ```jsx
+    // for in 문법
+    var 오브젝트 = { name : 'Kim', age : 30 };
+    for (var key in 오브젝트) {
+      console.log(오브젝트[key]);
+    }
+
+    class 부모 {
+
+    }
+    부모.prototype.name = 'Park';
+
+    var 오브젝트 = new 부모();
+
+    for (var key in 오브젝트) {
+      console.log(오브젝트[key]); // prototype도 뽑아줌
+    }
+    ```
+
+    ```jsx
+    // for of 문법
+    var 어레이 = [2,3,4,5];
+    for (var 자료 of 어레이) { // cpp의 auto키워드와 비슷하다
+      console.log(자료);
+    }
+    ```
+
+- map/set
+
+    ```jsx
+    var person = new Map();
+    person.set('age', 20);
+
+    person.get('age'); //자료 꺼내는 법
+    person.delete('age'); //자료 삭제하는 법
+    person.size; //자료 몇갠지 알려줌
+
+    //Map자료 반복문 돌리기
+    for (var key of person.keys() ){
+      console.log(key)
+    }
+
+    //자료를 직접 집어넣고 싶으면
+
+    var person = new Map([
+      ['age', 20],
+      ['name', 'Kim']
+    ]);
+    ```
+
+    ```jsx
+    var 출석부2 = new Set([ 'john' , 'tom', 'andy', 'tom' ]);
+
+    출석부2.add('sally'); //자료더하기
+    출석부2.has('tom'); //자료있는지 확인
+    출석부2.size;  //자료 몇갠지 세기
+
+    var 출석부 = [ 'john' , 'tom', 'andy', 'tom' ];
+
+    var 출석부2 = new Set(출석부); //복사생성자도 먹는구만
+
+    출석부 = [...출석부2]  //Set을 Array로 바꾸기
+    ```
+    
