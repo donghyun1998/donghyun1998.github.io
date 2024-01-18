@@ -1,7 +1,6 @@
-import Navbar from '@/app/ui/Navbar'
-import Head from 'next/head'
 import Link from 'next/link'
 import './globals.css'
+import Navbar from '@/app/ui/Navbar'
 
 const Header = () => {
   return (
@@ -9,7 +8,7 @@ const Header = () => {
       <h1 className="flex items-center text-4xl font-bold">
         <Link href="/">대단한 동현 블로그</Link>
       </h1>
-      <Navbar />
+      <Navbar/>
     </header>
   )
 }
@@ -22,9 +21,6 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body className="flex h-screen w-screen flex-col">
-        <Head>
-          <title>대단한 동현 블로그</title>
-        </Head>
         <Header />
         <div className="flex h-full w-screen overflow-y-scroll">{children}</div>
       </body>
