@@ -20,15 +20,14 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <>
-      <Head>
-      <title>대단한 동현 블로그</title>
-        <meta name="description" content="동현의 멋진 블로그에 오신 것을 환영합니다." />
-        <meta name="keywords" content="동현, 블로그, 개발" />
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      </Head>
-      <Header />
-      <div className="flex h-full w-screen overflow-y-scroll">{children}</div>
-    </>
+    <html lang="ko">
+      <body className="flex h-screen w-screen flex-col">
+        <Head>
+          <title>대단한 동현 블로그</title>
+        </Head>
+        <Header />
+        <div className="flex h-full w-screen overflow-y-scroll">{children}</div>
+      </body>
+    </html>
   )
 }
