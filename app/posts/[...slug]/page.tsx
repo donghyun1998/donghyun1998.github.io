@@ -1,9 +1,5 @@
-import { Post, allPosts } from 'contentlayer/generated'
+import { allPosts } from 'contentlayer/generated'
 import { format, parseISO } from 'date-fns'
-
-type Props = {
-  post: Post
-}
 
 export const generateStaticParams = async () =>
   allPosts.map((post) => ({ slug: post.slug.split('/') }))
@@ -23,7 +19,7 @@ const PostLayout = ({ params }: { params: { slug: string[] } }) => {
   if (!post) throw new Error(`Post not found for slug: ${params.slug}`)
 
   return (
-    <article className="mx-auto min-h-screen max-w-xl py-8">
+    <article className="mx-auto my-8 max-w-screen-md">
       <div className="mb-8 text-center">
         <time dateTime={post.date} className="mb-1 text-xs">
           {format(parseISO(post.date), 'LLLL d, yyyy')}
@@ -31,7 +27,7 @@ const PostLayout = ({ params }: { params: { slug: string[] } }) => {
         <h1 className="text-3xl font-bold">{post.title}</h1>
       </div>
       <div
-        className="prose lg:prose-xl [&>*:last-child]:mb-0 [&>*]:mb-3"
+        className="prose max-w-full overflow-x-auto lg:prose-xl [&>*:last-child]:pb-10"
         dangerouslySetInnerHTML={{ __html: post.body.html }}
       />
     </article>
