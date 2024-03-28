@@ -24,6 +24,52 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      typography: {
+        DEFAULT: {
+          css: {
+            color: 'white',
+            a: {
+              color: 'white',
+              '&:hover': {
+                color: 'white',
+              },
+            },
+            h1: {
+              color: 'white',
+            },
+            h2: {
+              color: 'white',
+            },
+            h3: {
+              color: 'white',
+            },
+            h4: {
+              color: 'white',
+            },
+            h5: {
+              color: 'white',
+            },
+            h6: {
+              color: 'white',
+            },
+            strong: {
+              color: 'white',
+            },
+            blockquote: {
+              color: 'white',
+            },
+            code: {
+              color: 'white',
+            },
+            figcaption: {
+              color: 'white',
+            },
+            'figure figcaption': {
+              color: 'white',
+            },
+          },
+        },
+      },
     },
   },
   plugins: [require('@tailwindcss/typography')],
