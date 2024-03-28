@@ -7,7 +7,7 @@ export default function DevTagLayout({
   children: React.ReactNode
 }) {
   const posts = allPosts.filter((post) => post.category === 'dev')
-  // .sort((a, b) => compareDesc(new Date(a.date), new Date(b.date)))
+
   let tagMap = new Map<string, number>()
   for (let i = 0; i < posts.length; i++) {
     if (tagMap.has(posts[i].tag)) {
@@ -18,10 +18,10 @@ export default function DevTagLayout({
   }
 
   return (
-    <div className="mx-8 flex h-full w-screen flex-col overflow-y-scroll">
-      <div className="flex gap-2">
+    <div className="mx-8 flex h-full w-full flex-col">
+      <div className="mt-6 flex gap-2">
         {Array.from(tagMap).map(([k, v], idx) => (
-          <TagBox category='dev' key={idx} tag={k} count={v} />
+          <TagBox category="dev" key={idx} tag={k} count={v} />
         ))}
       </div>
       {children}

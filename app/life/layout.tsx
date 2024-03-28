@@ -17,10 +17,10 @@ export default function LifeTagLayout({
     }
   }
   return (
-    <div className="mx-8 flex h-full w-screen flex-col overflow-y-scroll">
-      <div className="flex gap-2">
+    <div className="mx-8 flex h-full w-full flex-col">
+      <div className="mt-6 flex gap-2">
         {Array.from(tagMap).map(([k, v], idx) => (
-          <TagBox category='life' key={idx} tag={k} count={v} />
+          <TagBox category="life" key={idx} tag={k} count={v} />
         ))}
       </div>
       {children}
