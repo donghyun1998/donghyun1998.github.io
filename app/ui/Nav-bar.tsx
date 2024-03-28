@@ -1,10 +1,11 @@
 'use client'
 
-import { usePathname } from 'next/navigation'
+import { usePathname, useSearchParams } from 'next/navigation'
 import Link from 'next/link'
 
 export default function Navbar() {
   const pathname = usePathname()
+  const params = useSearchParams()
 
   const menus = [
     {
@@ -20,6 +21,7 @@ export default function Navbar() {
       name: 'life',
     },
   ]
+
   return (
     <nav className="border-gray-200 bg-white dark:bg-gray-900">
       <div className="mx-auto flex items-center p-4">
@@ -35,7 +37,7 @@ export default function Navbar() {
                 <Link
                   href={menu.url}
                   className={`${
-                    pathname == menu.url
+                    pathname == menu.url || params.get('category') == menu.name
                       ? 'block rounded bg-blue-700 px-3 py-2 text-white dark:text-white md:bg-transparent md:p-0 md:text-blue-700 md:dark:text-blue-500'
                       : 'text-white'
                   } `}
