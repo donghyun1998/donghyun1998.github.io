@@ -2,15 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-/* :root {
-  --foreground-rgb: 255, 255, 255;
-  --background-color: #121212;
+body {
+  background-color: #1f2937;
+  color: white;
 }
 
- html {
-  color: rgb(var(--foreground-rgb));
+.prose {
+  width: auto;
+  height: auto;
+  max-width: 100%;
 }
-
- body {
-  background-color: #121212;
-} */
