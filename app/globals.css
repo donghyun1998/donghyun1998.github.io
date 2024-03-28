@@ -5,10 +5,5 @@
 body {
   background-color: #1f2937;
   color: white;
-}
-
-.prose {
-  width: auto;
-  height: auto;
-  max-width: 100%;
+  overflow-x: hidden;
 }
