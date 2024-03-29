@@ -8,10 +8,10 @@ export default function Navbar() {
   const params = useSearchParams()
 
   const menus = [
-    {
-      url: '/portfolio',
-      name: 'portfolio',
-    },
+    // {
+    //   url: '/portfolio',
+    //   name: 'portfolio',
+    // },
     {
       url: '/dev',
       name: 'dev',
